@@ -1,5 +1,5 @@
 #!/bin/bash
-BUCKET_NAME="logging"
+BUCKET_NAME="logging-test-team8"
 REGION="us-east-1"
 
 aws s3 mb "s3://$BUCKET_NAME" --region "$REGION"

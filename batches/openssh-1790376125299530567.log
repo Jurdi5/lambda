@@ -1,0 +1,10 @@
+Dec 10 08:26:22 LabSZ sshd[24379]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=5.188.10.180 
+Dec 10 08:26:24 LabSZ sshd[24379]: Failed password for invalid user guest from 5.188.10.180 port 47337 ssh2
+Dec 10 08:26:25 LabSZ sshd[24379]: Connection closed by 5.188.10.180 [preauth]
+Dec 10 08:26:32 LabSZ sshd[24381]: Connection closed by 5.188.10.180 [preauth]
+Dec 10 08:26:40 LabSZ sshd[24383]: Did not receive identification string from 5.188.10.180
+Dec 10 08:33:23 LabSZ sshd[24384]: Did not receive identification string from 103.207.39.212
+Dec 10 08:33:24 LabSZ sshd[24385]: Invalid user support from 103.207.39.212
+Dec 10 08:33:24 LabSZ sshd[24385]: input_userauth_request: invalid user support [preauth]
+Dec 10 08:33:24 LabSZ sshd[24385]: pam_unix(sshd:auth): check pass; user unknown
+Dec 10 08:33:24 LabSZ sshd[24385]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=103.207.39.212 

@@ -1,0 +1,7 @@
+Dec 10 09:15:36 LabSZ sshd[24567]: Failed password for root from 187.141.143.180 port 44414 ssh2
+Dec 10 09:15:37 LabSZ sshd[24567]: Received disconnect from 187.141.143.180: 11: Bye Bye [preauth]
+Dec 10 09:15:39 LabSZ sshd[24569]: reverse mapping checking getaddrinfo for customer-187-141-143-180-sta.uninet-ide.com.mx [187.141.143.180] failed - POSSIBLE BREAK-IN ATTEMPT!
+Dec 10 09:15:39 LabSZ sshd[24569]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=187.141.143.180  user=root
+Dec 10 09:15:41 LabSZ sshd[24569]: Failed password for root from 187.141.143.180 port 45661 ssh2
+Dec 10 09:15:41 LabSZ sshd[24569]: Received disconnect from 187.141.143.180: 11: Bye Bye [preauth]
+Dec 10 09:15:44 LabSZ sshd[24571]: reverse mapping checking getaddrinfo for customer-187-141-143-180-sta.uninet-ide.com.mx [187.141.143.180] failed - POSSIBLE BREAK-IN ATTEMPT!

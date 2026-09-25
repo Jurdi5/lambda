@@ -1,0 +1,9 @@
+Dec 10 10:55:35 LabSZ sshd[24942]: Received disconnect from 183.62.140.253: 11: Bye Bye [preauth]
+Dec 10 10:55:35 LabSZ sshd[24944]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.62.140.253  user=root
+Dec 10 10:55:37 LabSZ sshd[24944]: Failed password for root from 183.62.140.253 port 46273 ssh2
+Dec 10 10:55:37 LabSZ sshd[24944]: Received disconnect from 183.62.140.253: 11: Bye Bye [preauth]
+Dec 10 10:55:37 LabSZ sshd[24947]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.62.140.253  user=root
+Dec 10 10:55:39 LabSZ sshd[24947]: Failed password for root from 183.62.140.253 port 46626 ssh2
+Dec 10 10:55:39 LabSZ sshd[24947]: Received disconnect from 183.62.140.253: 11: Bye Bye [preauth]
+Dec 10 10:55:39 LabSZ sshd[24949]: Invalid user oracle from 183.62.140.253
+Dec 10 10:55:39 LabSZ sshd[24949]: input_userauth_request: invalid user oracle [preauth]

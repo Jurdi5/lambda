@@ -1,0 +1,9 @@
+Dec 10 11:04:00 LabSZ sshd[25476]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.62.140.253  user=root
+Dec 10 11:04:00 LabSZ sshd[25472]: Failed password for root from 103.99.0.122 port 63012 ssh2
+Dec 10 11:04:00 LabSZ sshd[25472]: error: Received disconnect from 103.99.0.122: 14: No more user authentication methods available. [preauth]
+Dec 10 11:04:02 LabSZ sshd[25478]: Invalid user anonymous from 103.99.0.122
+Dec 10 11:04:02 LabSZ sshd[25478]: input_userauth_request: invalid user anonymous [preauth]
+Dec 10 11:04:02 LabSZ sshd[25478]: pam_unix(sshd:auth): check pass; user unknown
+Dec 10 11:04:02 LabSZ sshd[25478]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=103.99.0.122 
+Dec 10 11:04:02 LabSZ sshd[25476]: Failed password for root from 183.62.140.253 port 56779 ssh2
+Dec 10 11:04:02 LabSZ sshd[25476]: Received disconnect from 183.62.140.253: 11: Bye Bye [preauth]

@@ -1,0 +1,9 @@
+Dec 10 11:00:56 LabSZ sshd[25286]: Received disconnect from 183.62.140.253: 11: Bye Bye [preauth]
+Dec 10 11:00:56 LabSZ sshd[25289]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.62.140.253  user=root
+Dec 10 11:00:57 LabSZ sshd[25283]: Invalid user sandeep from 88.147.143.242
+Dec 10 11:00:57 LabSZ sshd[25283]: input_userauth_request: invalid user sandeep [preauth]
+Dec 10 11:00:57 LabSZ sshd[25283]: pam_unix(sshd:auth): check pass; user unknown
+Dec 10 11:00:57 LabSZ sshd[25283]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=88.147.143.242 
+Dec 10 11:00:58 LabSZ sshd[25289]: Failed password for root from 183.62.140.253 port 50953 ssh2
+Dec 10 11:00:58 LabSZ sshd[25289]: Received disconnect from 183.62.140.253: 11: Bye Bye [preauth]
+Dec 10 11:00:58 LabSZ sshd[25291]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.62.140.253  user=root

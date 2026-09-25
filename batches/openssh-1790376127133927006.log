@@ -1,0 +1,7 @@
+Dec 10 09:19:26 LabSZ sshd[24661]: reverse mapping checking getaddrinfo for customer-187-141-143-180-sta.uninet-ide.com.mx [187.141.143.180] failed - POSSIBLE BREAK-IN ATTEMPT!
+Dec 10 09:19:26 LabSZ sshd[24661]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=187.141.143.180  user=mysql
+Dec 10 09:19:28 LabSZ sshd[24661]: Failed password for mysql from 187.141.143.180 port 52586 ssh2
+Dec 10 09:19:28 LabSZ sshd[24661]: Received disconnect from 187.141.143.180: 11: Bye Bye [preauth]
+Dec 10 09:19:32 LabSZ sshd[24663]: reverse mapping checking getaddrinfo for customer-187-141-143-180-sta.uninet-ide.com.mx [187.141.143.180] failed - POSSIBLE BREAK-IN ATTEMPT!
+Dec 10 09:19:32 LabSZ sshd[24663]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=187.141.143.180  user=git
+Dec 10 09:19:34 LabSZ sshd[24663]: Failed password for git from 187.141.143.180 port 53992 ssh2

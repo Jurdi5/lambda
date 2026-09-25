@@ -1,0 +1,9 @@
+Dec 10 09:11:56 LabSZ sshd[24464]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=103.99.0.122 
+Dec 10 09:11:57 LabSZ sshd[24464]: Failed password for invalid user cisco from 103.99.0.122 port 58309 ssh2
+Dec 10 09:11:58 LabSZ sshd[24464]: error: Received disconnect from 103.99.0.122: 14: No more user authentication methods available. [preauth]
+Dec 10 09:11:58 LabSZ sshd[24467]: Invalid user test from 103.99.0.122
+Dec 10 09:11:58 LabSZ sshd[24467]: input_userauth_request: invalid user test [preauth]
+Dec 10 09:11:58 LabSZ sshd[24467]: pam_unix(sshd:auth): check pass; user unknown
+Dec 10 09:11:58 LabSZ sshd[24467]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=103.99.0.122 
+Dec 10 09:12:00 LabSZ sshd[24467]: Failed password for invalid user test from 103.99.0.122 port 60250 ssh2
+Dec 10 09:12:00 LabSZ sshd[24467]: error: Received disconnect from 103.99.0.122: 14: No more user authentication methods available. [preauth]

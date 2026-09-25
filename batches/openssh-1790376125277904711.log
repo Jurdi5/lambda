@@ -1,0 +1,10 @@
+Dec 10 08:26:01 LabSZ sshd[24375]: pam_unix(sshd:auth): check pass; user unknown
+Dec 10 08:26:03 LabSZ sshd[24375]: Failed password for invalid user default from 5.188.10.180 port 41538 ssh2
+Dec 10 08:26:04 LabSZ sshd[24375]: Connection closed by 5.188.10.180 [preauth]
+Dec 10 08:26:04 LabSZ sshd[24375]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=5.188.10.180 
+Dec 10 08:26:09 LabSZ sshd[24377]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=5.188.10.180  user=ftp
+Dec 10 08:26:12 LabSZ sshd[24377]: Failed password for ftp from 5.188.10.180 port 54715 ssh2
+Dec 10 08:26:14 LabSZ sshd[24377]: Connection closed by 5.188.10.180 [preauth]
+Dec 10 08:26:22 LabSZ sshd[24379]: Invalid user guest from 5.188.10.180
+Dec 10 08:26:22 LabSZ sshd[24379]: input_userauth_request: invalid user guest [preauth]
+Dec 10 08:26:22 LabSZ sshd[24379]: pam_unix(sshd:auth): check pass; user unknown

@@ -1,0 +1,8 @@
+Dec 10 09:18:07 LabSZ sshd[24626]: Received disconnect from 187.141.143.180: 11: Bye Bye [preauth]
+Dec 10 09:18:11 LabSZ sshd[24628]: reverse mapping checking getaddrinfo for customer-187-141-143-180-sta.uninet-ide.com.mx [187.141.143.180] failed - POSSIBLE BREAK-IN ATTEMPT!
+Dec 10 09:18:11 LabSZ sshd[24628]: Invalid user ubuntu from 187.141.143.180
+Dec 10 09:18:11 LabSZ sshd[24628]: input_userauth_request: invalid user ubuntu [preauth]
+Dec 10 09:18:11 LabSZ sshd[24628]: pam_unix(sshd:auth): check pass; user unknown
+Dec 10 09:18:11 LabSZ sshd[24628]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=187.141.143.180 
+Dec 10 09:18:12 LabSZ sshd[24628]: Failed password for invalid user ubuntu from 187.141.143.180 port 35697 ssh2
+Dec 10 09:18:13 LabSZ sshd[24628]: Received disconnect from 187.141.143.180: 11: Bye Bye [preauth]

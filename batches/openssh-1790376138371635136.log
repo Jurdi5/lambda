@@ -1,0 +1,8 @@
+Dec 10 11:03:02 LabSZ sshd[25417]: Received disconnect from 183.62.140.253: 11: Bye Bye [preauth]
+Dec 10 11:03:02 LabSZ sshd[25419]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.62.140.253  user=root
+Dec 10 11:03:05 LabSZ sshd[25419]: Failed password for root from 183.62.140.253 port 46059 ssh2
+Dec 10 11:03:05 LabSZ sshd[25419]: Received disconnect from 183.62.140.253: 11: Bye Bye [preauth]
+Dec 10 11:03:05 LabSZ sshd[25422]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.62.140.253  user=root
+Dec 10 11:03:07 LabSZ sshd[25422]: Failed password for root from 183.62.140.253 port 46515 ssh2
+Dec 10 11:03:07 LabSZ sshd[25422]: Received disconnect from 183.62.140.253: 11: Bye Bye [preauth]
+Dec 10 11:03:07 LabSZ sshd[25424]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.62.140.253  user=root

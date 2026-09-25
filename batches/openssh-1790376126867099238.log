@@ -1,0 +1,8 @@
+Dec 10 09:18:17 LabSZ sshd[24630]: reverse mapping checking getaddrinfo for customer-187-141-143-180-sta.uninet-ide.com.mx [187.141.143.180] failed - POSSIBLE BREAK-IN ATTEMPT!
+Dec 10 09:18:17 LabSZ sshd[24630]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=187.141.143.180  user=ftp
+Dec 10 09:18:18 LabSZ sshd[24630]: Failed password for ftp from 187.141.143.180 port 36704 ssh2
+Dec 10 09:18:19 LabSZ sshd[24630]: Received disconnect from 187.141.143.180: 11: Bye Bye [preauth]
+Dec 10 09:18:22 LabSZ sshd[24632]: reverse mapping checking getaddrinfo for customer-187-141-143-180-sta.uninet-ide.com.mx [187.141.143.180] failed - POSSIBLE BREAK-IN ATTEMPT!
+Dec 10 09:18:22 LabSZ sshd[24632]: Invalid user test from 187.141.143.180
+Dec 10 09:18:22 LabSZ sshd[24632]: input_userauth_request: invalid user test [preauth]
+Dec 10 09:18:22 LabSZ sshd[24632]: pam_unix(sshd:auth): check pass; user unknown

@@ -1,0 +1,8 @@
+Dec 10 11:03:50 LabSZ sshd[25461]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=103.99.0.122  user=root
+Dec 10 11:03:51 LabSZ sshd[25457]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.62.140.253  user=root
+Dec 10 11:03:51 LabSZ sshd[25463]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.62.140.253  user=root
+Dec 10 11:03:52 LabSZ sshd[25461]: Failed password for root from 103.99.0.122 port 61906 ssh2
+Dec 10 11:03:52 LabSZ sshd[25461]: error: Received disconnect from 103.99.0.122: 14: No more user authentication methods available. [preauth]
+Dec 10 11:03:53 LabSZ sshd[25457]: Failed password for root from 183.62.140.253 port 53245 ssh2
+Dec 10 11:03:53 LabSZ sshd[25457]: fatal: Write failed: Connection reset by peer [preauth]
+Dec 10 11:03:53 LabSZ sshd[25463]: Failed password for root from 183.62.140.253 port 55138 ssh2

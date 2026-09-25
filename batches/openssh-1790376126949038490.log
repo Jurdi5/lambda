@@ -1,0 +1,9 @@
+Dec 10 09:18:31 LabSZ sshd[24639]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=103.207.39.16  user=uucp
+Dec 10 09:18:33 LabSZ sshd[24639]: Failed password for uucp from 103.207.39.16 port 42435 ssh2
+Dec 10 09:18:33 LabSZ sshd[24639]: Received disconnect from 103.207.39.16: 11: Closed due to user request. [preauth]
+Dec 10 09:18:33 LabSZ sshd[24643]: Invalid user admin from 103.207.39.16
+Dec 10 09:18:33 LabSZ sshd[24643]: input_userauth_request: invalid user admin [preauth]
+Dec 10 09:18:33 LabSZ sshd[24643]: pam_unix(sshd:auth): check pass; user unknown
+Dec 10 09:18:33 LabSZ sshd[24643]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=103.207.39.16 
+Dec 10 09:18:33 LabSZ sshd[24641]: reverse mapping checking getaddrinfo for customer-187-141-143-180-sta.uninet-ide.com.mx [187.141.143.180] failed - POSSIBLE BREAK-IN ATTEMPT!
+Dec 10 09:18:33 LabSZ sshd[24641]: Invalid user deploy from 187.141.143.180

@@ -1,0 +1,9 @@
+Dec 10 09:12:27 LabSZ sshd[24485]: error: Received disconnect from 103.99.0.122: 14: No more user authentication methods available. [preauth]
+Dec 10 09:12:28 LabSZ sshd[24488]: Invalid user monitor from 103.99.0.122
+Dec 10 09:12:28 LabSZ sshd[24488]: input_userauth_request: invalid user monitor [preauth]
+Dec 10 09:12:28 LabSZ sshd[24488]: pam_unix(sshd:auth): check pass; user unknown
+Dec 10 09:12:28 LabSZ sshd[24488]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=103.99.0.122 
+Dec 10 09:12:30 LabSZ sshd[24488]: Failed password for invalid user monitor from 103.99.0.122 port 59812 ssh2
+Dec 10 09:12:30 LabSZ sshd[24488]: error: Received disconnect from 103.99.0.122: 14: No more user authentication methods available. [preauth]
+Dec 10 09:12:30 LabSZ sshd[24490]: Invalid user ftpuser from 103.99.0.122
+Dec 10 09:12:30 LabSZ sshd[24490]: input_userauth_request: invalid user ftpuser [preauth]

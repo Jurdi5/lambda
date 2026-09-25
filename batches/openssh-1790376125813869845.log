@@ -1,0 +1,8 @@
+Dec 10 09:12:22 LabSZ sshd[24483]: pam_unix(sshd:auth): check pass; user unknown
+Dec 10 09:12:22 LabSZ sshd[24483]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=103.99.0.122 
+Dec 10 09:12:24 LabSZ sshd[24483]: Failed password for invalid user admin from 103.99.0.122 port 53531 ssh2
+Dec 10 09:12:24 LabSZ sshd[24483]: error: Received disconnect from 103.99.0.122: 14: No more user authentication methods available. [preauth]
+Dec 10 09:12:24 LabSZ sshd[24485]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=103.99.0.122  user=ftp
+Dec 10 09:12:26 LabSZ sshd[24485]: Failed password for ftp from 103.99.0.122 port 56079 ssh2
+Dec 10 09:12:27 LabSZ sshd[24455]: Connection closed by 185.190.58.151 [preauth]
+Dec 10 09:12:27 LabSZ sshd[24455]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=185.190.58.151 

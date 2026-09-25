@@ -1,0 +1,8 @@
+Dec 10 09:18:46 LabSZ sshd[24647]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=187.141.143.180 
+Dec 10 09:18:48 LabSZ sshd[24647]: Failed password for invalid user oracle from 187.141.143.180 port 42342 ssh2
+Dec 10 09:18:48 LabSZ sshd[24647]: Received disconnect from 187.141.143.180: 11: Bye Bye [preauth]
+Dec 10 09:18:52 LabSZ sshd[24649]: reverse mapping checking getaddrinfo for customer-187-141-143-180-sta.uninet-ide.com.mx [187.141.143.180] failed - POSSIBLE BREAK-IN ATTEMPT!
+Dec 10 09:18:52 LabSZ sshd[24649]: Invalid user nagios1 from 187.141.143.180
+Dec 10 09:18:52 LabSZ sshd[24649]: input_userauth_request: invalid user nagios1 [preauth]
+Dec 10 09:18:52 LabSZ sshd[24649]: pam_unix(sshd:auth): check pass; user unknown
+Dec 10 09:18:52 LabSZ sshd[24649]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=187.141.143.180 

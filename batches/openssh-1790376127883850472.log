@@ -1,0 +1,9 @@
+Dec 10 10:55:45 LabSZ sshd[24955]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.62.140.253 
+Dec 10 10:55:47 LabSZ sshd[24955]: Failed password for invalid user ubuntu from 183.62.140.253 port 48168 ssh2
+Dec 10 10:55:47 LabSZ sshd[24955]: Received disconnect from 183.62.140.253: 11: Bye Bye [preauth]
+Dec 10 10:55:47 LabSZ sshd[24957]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.62.140.253  user=git
+Dec 10 10:55:49 LabSZ sshd[24957]: Failed password for git from 183.62.140.253 port 48527 ssh2
+Dec 10 10:55:49 LabSZ sshd[24957]: Received disconnect from 183.62.140.253: 11: Bye Bye [preauth]
+Dec 10 10:55:49 LabSZ sshd[24959]: Invalid user boot from 183.62.140.253
+Dec 10 10:55:49 LabSZ sshd[24959]: input_userauth_request: invalid user boot [preauth]
+Dec 10 10:55:49 LabSZ sshd[24959]: pam_unix(sshd:auth): check pass; user unknown

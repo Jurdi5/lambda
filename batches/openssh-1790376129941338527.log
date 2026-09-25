@@ -1,0 +1,8 @@
+Dec 10 11:04:17 LabSZ sshd[25501]: Failed password for root from 183.62.140.253 port 59702 ssh2
+Dec 10 11:04:17 LabSZ sshd[25501]: Received disconnect from 183.62.140.253: 11: Bye Bye [preauth]
+Dec 10 11:04:18 LabSZ sshd[25503]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.62.140.253  user=root
+Dec 10 11:04:18 LabSZ sshd[25499]: Failed password for uucp from 103.99.0.122 port 65454 ssh2
+Dec 10 11:04:18 LabSZ sshd[25499]: error: Received disconnect from 103.99.0.122: 14: No more user authentication methods available. [preauth]
+Dec 10 11:04:20 LabSZ sshd[25503]: Failed password for root from 183.62.140.253 port 60061 ssh2
+Dec 10 11:04:20 LabSZ sshd[25503]: Received disconnect from 183.62.140.253: 11: Bye Bye [preauth]
+Dec 10 11:04:20 LabSZ sshd[25508]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=183.62.140.253  user=root
