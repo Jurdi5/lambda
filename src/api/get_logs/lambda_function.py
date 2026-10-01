@@ -69,7 +69,13 @@ def lambda_handler(event, context):
                 break
             kwargs['ExclusiveStartKey'] = last_key
 
-        return _response(200, {'count': len(items), 'logs': items[:top]})
+        logs = items[:top]
+        # Compatibilidad: algunos writers guardan "hostname" en vez de "host"
+        for log in logs:
+            if log.get('host') is None and 'hostname' in log:
+                log['host'] = log.pop('hostname')
+
+        return _response(200, {'count': len(logs), 'logs': logs})
     except Exception as e:
         print(f'error consultando {TABLE_NAME}/{INDEX_NAME}: {e}')
         return _response(500, {'message': 'error al leer logs'})
