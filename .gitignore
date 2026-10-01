@@ -5,3 +5,4 @@ test-batch2/
 OpenSSH_2k.log
 send.log
 send2.log
+build/
