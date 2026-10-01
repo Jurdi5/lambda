@@ -1,0 +1,7 @@
+batches/
+test-batch/
+test-batch2/
+*.zip
+OpenSSH_2k.log
+send.log
+send2.log
