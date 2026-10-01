@@ -1,0 +1,145 @@
+{
+  "Comment": "Procesa un batch de logs de S3: separa lineas, clasifica cada una y la guarda en Logs o SecurityAlerts",
+  "StartAt": "SplitBatch",
+  "States": {
+    "SplitBatch": {
+      "Type": "Task",
+      "Comment": "Lambda que descarga el batch de S3 y lo separa en lineas",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "__SPLIT_FUNCTION_ARN__",
+        "Payload": {
+          "bucket.$": "$.detail.bucket.name",
+          "key.$": "$.detail.object.key"
+        }
+      },
+      "ResultSelector": {
+        "key.$": "$.Payload.key",
+        "count.$": "$.Payload.count",
+        "lines.$": "$.Payload.lines"
+      },
+      "Retry": [
+        {
+          "ErrorEquals": [
+            "Lambda.ServiceException",
+            "Lambda.AWSLambdaException",
+            "Lambda.SdkClientException",
+            "Lambda.TooManyRequestsException"
+          ],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 3,
+          "BackoffRate": 2
+        }
+      ],
+      "Next": "ClassifyLines"
+    },
+    "ClassifyLines": {
+      "Type": "Map",
+      "Comment": "Procesa cada linea del batch",
+      "ItemsPath": "$.lines",
+      "MaxConcurrency": 10,
+      "ItemProcessor": {
+        "ProcessorConfig": {
+          "Mode": "INLINE"
+        },
+        "StartAt": "IsSuspicious",
+        "States": {
+          "IsSuspicious": {
+            "Type": "Choice",
+            "Comment": "Sospechosa si contiene POSSIBLE BREAK-IN ATTEMPT o Invalid user",
+            "Choices": [
+              {
+                "Variable": "$.log",
+                "StringMatches": "*POSSIBLE BREAK-IN ATTEMPT*",
+                "Next": "SeverityHigh"
+              },
+              {
+                "Variable": "$.log",
+                "StringMatches": "*Invalid user*",
+                "Next": "SeverityMedium"
+              }
+            ],
+            "Default": "SaveLog"
+          },
+          "SeverityHigh": {
+            "Type": "Pass",
+            "Result": "high",
+            "ResultPath": "$.severity",
+            "Next": "SaveAlert"
+          },
+          "SeverityMedium": {
+            "Type": "Pass",
+            "Result": "medium",
+            "ResultPath": "$.severity",
+            "Next": "SaveAlert"
+          },
+          "SaveAlert": {
+            "Type": "Task",
+            "Comment": "Linea sospechosa -> SecurityAlerts",
+            "Resource": "arn:aws:states:::dynamodb:putItem",
+            "Parameters": {
+              "TableName": "__ALERTS_TABLE__",
+              "Item": {
+                "id": { "S.$": "$.id" },
+                "timestamp": { "S.$": "$.timestamp" },
+                "host": { "S.$": "$.host" },
+                "log": { "S.$": "$.log" },
+                "severity": { "S.$": "$.severity" }
+              }
+            },
+            "ResultPath": null,
+            "Retry": [
+              {
+                "ErrorEquals": [
+                  "DynamoDB.ProvisionedThroughputExceededException",
+                  "DynamoDB.ThrottlingException",
+                  "DynamoDB.RequestLimitExceeded",
+                  "DynamoDB.InternalServerErrorException"
+                ],
+                "IntervalSeconds": 1,
+                "MaxAttempts": 6,
+                "BackoffRate": 2,
+                "JitterStrategy": "FULL"
+              }
+            ],
+            "End": true
+          },
+          "SaveLog": {
+            "Type": "Task",
+            "Comment": "Linea normal -> Logs",
+            "Resource": "arn:aws:states:::dynamodb:putItem",
+            "Parameters": {
+              "TableName": "__LOGS_TABLE__",
+              "Item": {
+                "id": { "S.$": "$.id" },
+                "timestamp": { "S.$": "$.timestamp" },
+                "host": { "S.$": "$.host" },
+                "log": { "S.$": "$.log" },
+                "gsi_pk": { "S": "LOG" },
+                "last_modified": { "S.$": "$.last_modified" }
+              }
+            },
+            "ResultPath": null,
+            "Retry": [
+              {
+                "ErrorEquals": [
+                  "DynamoDB.ProvisionedThroughputExceededException",
+                  "DynamoDB.ThrottlingException",
+                  "DynamoDB.RequestLimitExceeded",
+                  "DynamoDB.InternalServerErrorException"
+                ],
+                "IntervalSeconds": 1,
+                "MaxAttempts": 6,
+                "BackoffRate": 2,
+                "JitterStrategy": "FULL"
+              }
+            ],
+            "End": true
+          }
+        }
+      },
+      "ResultPath": null,
+      "End": true
+    }
+  }
+}
